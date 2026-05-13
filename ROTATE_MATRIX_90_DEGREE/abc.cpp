@@ -17,6 +17,7 @@ for(int i=0;i<n;i++){
 
 int main(){
     int n;
+    cout<<"Enter the size of the matrix: ";
     cin>>n;
     vector<vector<int>> mat(n, vector<int> (n));
     for(int i=0;i<n;i++){
@@ -27,7 +28,7 @@ int main(){
     rotatematrix(mat);
  for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            cout<<mat[i][j];
+            cout<<mat[i][j]<<" ";
         }
         cout<<endl;
     }
