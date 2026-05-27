@@ -62,7 +62,8 @@ int main(){
 
     vector<vector<int>> ans= zerosone(matrix, m,n);
 
-    cout<<"The matrix eleemts after conversion are:";;
+    cout<<"The matrix eleemts after conversion are:";
+    cout<<endl;
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
             cout<<ans[i][j]<<" ";
