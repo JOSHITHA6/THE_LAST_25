@@ -12,9 +12,9 @@ vector<vector<int>> zerosone(vector<vector<int>> &matrix, int m, int n){
 for(int i=0;i<m;i++){
     for(int j=0;j<n;j++){
         if(matrix[i][j]==0){
-            matrix[0][j]=0;
+            matrix[i][0]=0;
             if(j!=0){
-               matrix[i][0]=0;
+               matrix[0][j]=0;
             }
             else{
                col0=0;
