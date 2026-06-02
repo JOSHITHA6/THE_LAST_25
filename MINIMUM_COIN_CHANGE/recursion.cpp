@@ -43,5 +43,5 @@ int main(){
     cin>>target;
 
     int ans=minimumelements(arr,target);
-    cout<<ans<<endl;
+    cout<<"Minimum coin change is:"<<ans<<endl;
 }
