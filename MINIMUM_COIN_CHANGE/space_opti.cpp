@@ -23,8 +23,9 @@ vector<int> curr(target+1,0);
                         take=1+curr[T-arr[ind]];
                     }
                     curr[T]=min(notpick,take);
-                     prev=curr;
+                     
                 }
+                prev=curr;
                         
             }
             
@@ -34,9 +35,9 @@ vector<int> curr(target+1,0);
     if(ans>=1e9){
         return -1;
     }
-    else{
+   
         return ans;
-    }
+    
 }
    
 int main(){
