@@ -8,13 +8,14 @@ int f(vector<int> &arr, int ind, int T){
     else{
         return 1e9;
     }
+}
     int notpick=0+f(arr,ind-1,T);
     int pick=INT_MAX;
     if(arr[ind]<=T){
         pick=1+f(arr,ind,T-arr[ind]);
     }
     return min(pick,notpick);
-}
+
 }
 
 int minimumelements(vector<int> &arr,int T){
@@ -28,8 +29,9 @@ int minimumelements(vector<int> &arr,int T){
     }
 }
 int main(){
-    vector<int> arr;
-    for(int i=0;i<arr.size();i++){
+    int n; cin>>n;
+    vector<int> arr(n);
+    for(int i=0;i<n;i++){
         cin>>arr[i];
 
     }
