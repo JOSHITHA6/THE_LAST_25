@@ -23,11 +23,12 @@ vector<int> curr(target+1,0);
                         take=1+curr[T-arr[ind]];
                     }
                     curr[T]=min(notpick,take);
+                     prev=curr;
                 }
                         
             }
             
- prev=curr;
+
     
     int ans= curr[target];
     if(ans>=1e9){
