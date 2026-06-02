@@ -29,13 +29,17 @@ int minimumelements(vector<int> &arr,int T){
     }
 }
 int main(){
-    int n; cin>>n;
+    int n; 
+    cout<<"Enter n:";
+    cin>>n;
     vector<int> arr(n);
     for(int i=0;i<n;i++){
+        cout<<"Enter element "<<i+1<<":";
         cin>>arr[i];
 
     }
     int target;
+    cout<<"Enter target:";
     cin>>target;
 
     int ans=minimumelements(arr,target);
