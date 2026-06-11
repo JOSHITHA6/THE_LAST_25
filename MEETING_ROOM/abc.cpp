@@ -21,6 +21,6 @@ int main(){
         cout<<"Enter start and end time of " << i+1 <<" meeting: ";
         cin>>intervals[i][0]>>intervals[i][1];
     }
-    cout<<meetingroom(intervals)?"true":"false";
+    cout<<(meetingroom(intervals)?"true":"false")<<endl;
 
 }
